@@ -51,4 +51,5 @@ function randomCharacter() {
 		randomstring += chars.substring(rnum,rnum+1);
 	}
 	document.randform.randomfield.value = randomstring;
+	console.log(randomstring);
 }
