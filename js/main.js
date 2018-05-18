@@ -34,3 +34,8 @@ var lastClick, timeDiff;
 
         lastClick = event.timeStamp; 
     });
+
+//04
+$( "#testInput" ).on( "keydown", function(event) {
+  $( "#log" ).html( event.type + ": " +  event.which );
+});
