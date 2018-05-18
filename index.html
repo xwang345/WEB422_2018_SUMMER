@@ -43,11 +43,20 @@ Student Name: Xiaochen Wang
                     <br />
                     <br />
                     <h3>Question 5</h3>
-                    <p>All players: <span id="players"></span></p>
+                    <!--<p>All players: <span id="players"></span></p>
                     <button type="submit" id="character" class="btn paper-raise"> click me!!!</button>
                     <p>Random Character's Name: <span id="sltdPer"></span></p>
                     <h5 id="remPerBlk" style="display: none;" class="remPerBlk">remaining persons are : <span id="remPers"></span></h5>
-                    <input type="text" id="punchChar" placeholder="Type Correct Punch Person">
+                    <input type="text" id="punchChar" placeholder="Type Correct Punch Person">-->
+
+                    <form name="randform">
+                        <input type="button" value="Create Random String" onClick="randomCharacter();">&nbsp;
+                        <input type="text" name="randomfield" value="">
+                    </form>
+                    <form name="checkform">
+                        <input type="button" id="userInput" value="hit me" onclick="checkCharacter();">&nbsp;
+                        <input type="text" name="checkfield" value="">
+                    </form>
                 </div>
             </div>
         </div>

@@ -42,42 +42,13 @@ $( "#testInput" ).on( "keydown", function(event) {
 });
 
 //05
-(function($){
-	var names, randomNames, i, j, newArray = [], removeItem, emptyArray;
-	names = [
-		'Alikhan',
-		'Arunkumar N',
-		'Asfath',
-		'Dicson',
-		'Latha K',
-		'Logesh Kumar',
-		'Meena K',
-		'Mohamaed Ismail',
-		'Moorthy G',
-		'Naren',
-		'Raja Ovireddy',
-		'Rajesh P',
-		'Siddarthan KA',
-		'Vijaya Kumar'
-	];
-	document.getElementById('players').innerHTML = names;
-	$('#character').click(function() {
-		randomNames = names[Math.floor(Math.random() * names.length)];
-		document.getElementById('sltdPer').innerHTML = randomNames;
-		$('#remPerBlk').show();
-		for(i=0; i< names.length; i++) {
-			if(randomNames === names[i]) {
-				removeItem = randomNames;
-				names.splice($.inArray(removeItem, names), 1);
-				document.getElementById('remPers').innerHTML = names;
-				for(j=0; j<names.length+1; j++) {
-					newArray[j] = removeItem;
-				}
-			}
-		}
-		emptyArray = jQuery.isEmptyObject(names);
-		if(emptyArray === true) {
-			$.merge(names, newArray);
-		}
-	});
-})(jQuery);
+function randomCharacter() {
+	var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+	var string_length = 1;
+	var randomstring = '';
+	for (var i=0; i<string_length; i++) {
+		var rnum = Math.floor(Math.random() * chars.length);
+		randomstring += chars.substring(rnum,rnum+1);
+	}
+	document.randform.randomfield.value = randomstring;
+}
