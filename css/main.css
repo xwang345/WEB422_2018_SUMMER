@@ -2,3 +2,9 @@ p {
     text-align: left;
     color: blueviolet;
 }
+
+#punchChar{
+    height:30px;
+    font-size:14pt;
+    width: 350px;
+}
