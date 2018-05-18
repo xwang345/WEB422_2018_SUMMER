@@ -11,7 +11,26 @@ console.log("Hello");
 //     $("body").append(Element1,Element2,Element3); 
 // }
 
+//Q1
 $("ul#list > li").each(function(index){
     console.log("addElement");
     $(this).prepend('<b>' + index + ' - ' );
 });
+
+//Q2
+$( "input[type=text]" ).focus(function() {
+  $( this ).blur();
+});
+
+//Q3
+var lastClick, timeDiff;
+    $("#Cultime").click(function(event){
+        if(lastClick){
+            timeDiff = event.timeStamp - lastClick; 
+            $(".Cultime").append("Time difference between 2 clicks is " + timeDiff + " milliseconds." + "<br>");
+        }else{
+            $(".Cultime").append("<br>Click button again <br>");
+        }; 
+
+        lastClick = event.timeStamp; 
+    });
