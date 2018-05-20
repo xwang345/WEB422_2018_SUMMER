@@ -1,64 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="Assignment1" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/main.css" />
-        <title>Assignment1-Xiaochen</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Question 1</h3>
-                    <ul id="list">
-                        <li>Frist Name: Xiaochen</li>
-                        <li>Last Name: Wang</li>
-                        <li>Course Title: WEB422</li>
-                    </ul>
-                    <br />
-                    <br />
-                    <div class="container-fluid">
-                        <h3>Question 2</h3>
-                        <p><b>Stop people from writing in first text input box.</b></p>
-                        <p>Can not type here! <input type="text" id='textBox' placeholder="Test Test Test"></p>
-                        <br />
-                        <br />
-                    </div>
-                    
-                    <h3>Question 3</h3>
-                    <p>Count the number of milliseconds between the two click events on a button. </p>
-                    <div id="clock">
-                        <button type="button" id="Cultime">Click Me!!!</button>
-                        <p class="Cultime">Click on the button</p>
-                    </div>
-                    <br />
-                    <br />
-                    <h3>Question 4</h3>
-                    <p>Display the keyboard key which was pressed in a textbox.</p>
-                    <span>
-                         Please enter: <input type=“text” id="testInput">
-                    </span>
-                    <div id="log"></div>
-                    <br />
-                    <br />
-                    <h3>Question 5</h3>
-                    <form name="randform">
-                        Random Character:&nbsp;&nbsp;<input type="text" id="origChar"><br><br>
-                    </form>
-                    <form name="checkform">
-                        Please type following the above: <input type="text" id="inputChar" value=""><br><br>
-                    </form>
-                    <p id="addWarning"></p>
-                </div>
-            </div>
-        </div>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script>
-        // Student Name: Xiaochen Wang Student ID: 015297153
-        console.log("Student Name: Xiaochen Wang Student ID: 015297153");
+console.log("Student Name: Xiaochen Wang Student ID: 015297153");
         console.log("Hello here!");
 
         //Q1
@@ -175,7 +115,4 @@
             startTime = t3.getTime();
         }
         console.log("win is: " + numCorrect + " mistakes is: " + numMistakes );
-    }       
-
-    </script>
-</html>
+    } 
